@@ -6,5 +6,15 @@
 </head>
 <body>
   <h1>chat-socket</h1>
+      <ul id="chatbox"></ul>
+    <form name="chat-form" id="chat-form">
+      <label for="user">USER: </label>
+      <input type="text" id="user" name="user">
+      <input id="message">
+      <input type="submit">
+    </form>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.7/socket.io.min.js"></script>
+  <script src="/js/chat.js"></script>
 </body>
 </html>

@@ -24,6 +24,17 @@ var server = require('http').createServer(app);
 var io = require('socket.io')(server);
 
 
+io.on('connection', function (socket){
+  console.log('connected');
+  socket.on('message', function(message, user){
+    console.log(message, user)
+    io.emit('message', message)
+
+  });
+});
+
+
+
 
 server.listen(port, function(){
   console.log('SOMETHING something darkside on %s', port);
