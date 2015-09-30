@@ -7,3 +7,25 @@ var bodyParser = require('body-parser');
 //middleware
 app.use(morgan('dev'));
 app.use(express.static(__dirname + '/public'));
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
+app.set('view engine', 'ejs');
+app.set('views', './views');
+
+
+//route
+app.get('/', function (req, res){
+  res.render('index');
+});
+
+
+//WS STUFF
+var server = require('http').createServer(app);
+var io = require('socket.io')(server);
+
+
+
+server.listen(port, function(){
+  console.log('SOMETHING something darkside on %s', port);
+});
+
