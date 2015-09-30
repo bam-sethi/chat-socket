@@ -1,0 +1,61 @@
+body {
+  background-image: url("/images/diagonal-striped-brick.png");
+  background-color: #7F7F7F;
+  color: white;
+}
+
+#chat-window {
+  background-color: rgba(0,0,0,0.5);
+  color: white; 
+  display: inline-block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 250px;
+  border-radius: 3px;
+}
+}
+
+ul{
+  list-style-type: none;
+
+}
+.message-content {
+  color: hotpink;
+}
+
+.user-name {
+  background-color: rgba(243, 255, 30, 0.54);
+
+}
+#message-input{
+  width: 30%;
+  height: 50px;
+  margin-left: 20%;
+}
+.user-div{
+  margin-left: 20%;
+}
+.message-div{
+  margin-left: 20%;
+}
+#message {
+  width: 30%;
+  height: 50px; 
+}
+label {
+  width:30%;
+}
+.submit{
+  margin-left: 50%;
+}
+.button{
+  border: none;
+  background-color: hotpink;
+  padding: 10px;
+  font-size: 30px;
+}

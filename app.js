@@ -26,8 +26,8 @@ var io = require('socket.io')(server);
 
 io.on('connection', function (socket){
   console.log('connected');
-  socket.on('message', function(message, user){
-    console.log(message, user)
+  socket.on('message', function(message){
+    console.log(message)
     io.emit('message', message)
 
   });
